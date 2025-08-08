@@ -49,7 +49,7 @@ const Navbar = () => {
           <li>
             <button
               onClick={openAndDownloadResume}
-              className="text-indigo-600 hover:underline cursor-pointer"
+              className="hover:text-indigo-600 transition cursor-pointer"
             >
               Resume
             </button>

@@ -8,7 +8,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="flex flex-col md:flex-row items-center justify-center text-center md:text-left min-h-screen px-6 py-20 bg-gradient-to-br from-indigo-50 to-cyan-50"
+      className="flex flex-col md:flex-row items-center justify-center text-center md:text-left min-h-screen px-20 py-20 bg-gradient-to-br from-indigo-50 to-cyan-50 "
     >
       {/* Left Side (Text) */}
       <div className="flex-1 space-y-4">
@@ -26,17 +26,42 @@ const About = () => {
         </p>
 
         <div className="flex justify-center md:justify-start space-x-4">
+          {/* Resume Download Button */}
           <button
+            onClick={openAndDownloadResume}
+            className="flex items-center gap-2 px-6 py-2 cursor-pointer border border-indigo-600 text-indigo-600 font-medium rounded hover:bg-indigo-50 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 4v12"
+              />
+            </svg>
+            Resume
+          </button>
+          {/* <button
             onClick={openAndDownloadResume}
             className="border border-indigo-600 text-indigo-600 rounded px-4 py-2 cursor-pointer hover:bg-indigo-600 hover:text-white transition"
           >
             Download Resume
-          </button>
+          </button> */}
         </div>
 
         {/* Socials */}
         <div className="flex justify-center md:justify-start space-x-6 mt-4 text-gray-700 text-2xl">
-          <a href="https://github.com/Create-source1" target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/Create-source1"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaGithub />
           </a>
           <a href="mailto:jaiswalpj13@gmail.com">
@@ -45,7 +70,11 @@ const About = () => {
           <a href="tel:+919142706913">
             <FaPhone />
           </a>
-          <a href="https://linkedin.com/in/pooja-jaiswal13" target="_blank" rel="noreferrer">
+          <a
+            href="https://linkedin.com/in/pooja-jaiswal13"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FaLinkedin />
           </a>
         </div>
@@ -56,7 +85,7 @@ const About = () => {
         <img
           src={myPhoto}
           alt="Pooja Jaiswal"
-          className="w-60 h-80 rounded-full object-cover shadow-lg"
+          className="w-75 h-100 rounded-full object-cover shadow-lg"
         />
       </div>
     </section>
