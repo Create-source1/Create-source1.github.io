@@ -7,6 +7,7 @@ import { openAndDownloadResume } from "../utils/downloadResume";
 const navItems = [
   //   { label: "Home", to: "home" },
   { label: "About Me", to: "about" },
+  { label: "Experience", to: "experience" },
   { label: "Skills", to: "skills" },
   { label: "Projects", to: "projects" },
   { label: "GitHub", to: "github" },
